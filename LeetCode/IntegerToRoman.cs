@@ -35,7 +35,7 @@
             foreach (var map in RomanMap)
             {
                 // to finding the appropriate roman number with right dicig count inside the map
-                if (map.Key / Math.Pow(10, currentDigit - 1) < 1/* || map.Key / Math.Pow(10, currentDigit) > 1*/) continue;
+                if (map.Key / Math.Pow(10, currentDigit - 1) < 1) continue;
 
                 if (num / map.Key >= 1)
                 {
